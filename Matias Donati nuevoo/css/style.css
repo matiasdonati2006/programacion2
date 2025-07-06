@@ -1,0 +1,259 @@
+body {
+  background: linear-gradient(to right, #e99c44, #ac2b2b); 
+  color: #000000; 
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+   body.contenido{     
+       
+        padding: 50px;
+        font-family:content, san-serif;
+        background-color: rgb(216, 129, 30);
+        margin: 10px;
+        text-align: center;
+    }
+
+    
+    
+    .seccion{   
+      position:relative;
+      
+      width: 80%;
+      margin: 20px auto;
+      height: auto;
+      border-radius: 8px;
+      list-style-type: none;
+    }
+
+     header{
+        background: rgba(0,0,0,0.7);
+        width: 100%;
+        left: 0%;
+        position: fixed;
+        z-index:100;
+       }
+       nav{
+        float: left;
+        display: flex;
+        align-items: center; 
+        justify-content: space-between;
+      
+       }
+
+     
+       nav ul{
+        list-style: none;
+        overflow: hidden;
+       }
+       nav ul li{
+        float: left;
+        font-family:Arial,sans-serif ;
+        font-size: 16PX;
+       }
+
+       nav ul li a {
+        display: block;
+        padding: 10px;
+        color: beige;
+        text-decoration: none;
+       }
+       
+       nav ul li:hover{
+        background: #000000;
+       }
+       .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+      
+      .galeria img {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+       tabla{
+        display: block;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        
+        width: 100%;
+       }
+
+.alinear {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px; 
+    color: #000; 
+  }
+  
+  .alinear img {
+    border-radius: 50%;
+    color: #000; 
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    color: #000; 
+    font-size: 24px; 
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #000000; 
+  }
+ 
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+ }
+
+ .logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+ 
+ 
+.navbar .logo {
+  border-radius: 50%;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+  
+  .horizontal {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  img {
+    border-radius: 50%;
+  }  
+
+.gif-movimiento {
+  position: fixed;
+  bottom: 0;
+  left: -150px;
+  z-index: 999;
+  animation: moverGifLR 4s linear infinite;
+}
+
+.gif-movimiento img {
+  width: 150px;
+  animation: girarGif 4s linear infinite;
+}
+
+@keyframes moverGifLR {
+  0% {
+    left: -150px;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: -150px;
+  }
+}
+
+@keyframes girarGif {
+  0%, 49.99% {
+    transform: scaleX(1);
+  }
+  50%, 100% {
+    transform: scaleX(-1);
+  }
+}
+/* CSS */
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+}
+
+/* Responsive: solo muestra el icono hamburguesa en pantallas pequeñas */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background: #f9f9f9;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+
+
+.carrusel {
+  position: relative;
+  width: 400px;   /* ancho */
+  height: 400px;  /* alto igual al ancho para que sea cuadrado */
+  margin: auto;
+  overflow: hidden;
+}
+.carrusel-img {
+  display: none;
+  width: 400%;
+  height: 400%;
+  object-fit: cover; /* asegura que la imagen cubra el área cuadrada */
+}
+.carrusel-img.active {
+  display: block;
+}
+#miCarrusel .carousel-item img {
+  max-width: 400px;   /* Cambia el ancho máximo según lo que necesites */
+  max-height: 400px;  /* Cambia la altura máxima según lo que necesites */
+  margin: 0 auto;     /* Centra la imagen horizontalmente */
+  display: block;
+  width: auto;        /* Opcional: evita que la imagen se estire */
+  height: auto;       /* Opcional: mantiene la proporción */
+}

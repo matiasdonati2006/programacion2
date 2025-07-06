@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cuestionario</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body class="contenido">
+  <header>
+    <nav>
+      <img src="../imagenes/go.jpg" alt="logo" class="logo">
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+        <li> <a href="../inicio/index.html">Inicio /</a></li>
+        <li> <a href="../arte/index.html">Arte /</a></li>
+        <li> <a href="../contacto/index.html">Contacto /</a></li>
+        <li> <a href="../duusen/index.html">Info /</a></li>
+      </ul>
+    </nav>
+  </header>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <main>
+    <h1>Cuestionario</h1>
+    <form method="GET" action="" enctype="multipart/form-data">
+
+    <label for="name"><h5>Name:</h5></label>
+    <input type="text" id="name" name="name" required autofocus size="30" style="width: 300px;">
+    <br>
+
+
+    <label for="email"><h5>Email:</h5></label>
+    <input type="email" id="email" name="email" required size="30" style="width: 300px;">
+    <br>
+
+
+    <label for="datetime"><h5>Date and time:</h5></label>
+    <input type="datetime-local" id="datetime" name="datetime" style="width: 300px;">
+    <br>
+   
+    <label for="telefono"><h5>Phone:</h5></label>
+    <input type="tel" id="telefono" name="telefono" placeholder="+1234567890" pattern="^\+?[0-9\s\-]{7,15}$" required style="width: 300px;">
+    <br>
+
+   
+    
+    <br>
+
+    <label for="Especificaciónes"><h5>Specs:</h5></label>
+    <input type="text" id="especificaciones" name="especificaciones" required>
+    <br>
+      <button type="submit">Enviar</button>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+</body>
+</html>
